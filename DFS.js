@@ -76,43 +76,69 @@ class Graph {
 var g = new Graph();
 
 //EJEMPLO1
-/* g.addVertex(1);
-g.addVertex(2);
-g.addVertex(3);
-g.addVertex(4);
-g.addVertex(5);
-g.addVertex(6);
-g.addVertex(7);
+/* g.addVertice(1);
+g.addVertice(2);
+g.addVertice(3);
+g.addVertice(4);
+g.addVertice(5);
+g.addVertice(6);
+g.addVertice(7);
 
-g.addEdge(1, 2);
-g.addEdge(1, 3);
-g.addEdge(2, 4);
-g.addEdge(2, 5);
-g.addEdge(3, 6);
-g.addEdge(3, 7); */
+g.addArista(1, 2);
+g.addArista(1, 3);
+g.addArista(2, 4);
+g.addArista(2, 5);
+g.addArista(3, 6);
+g.addArista(3, 7); */
 
 //EJEMPLO 2
-/* g.addVertex("A");
-g.addVertex("B");
-g.addVertex("C");
-g.addVertex("D");
-g.addVertex("E");
-g.addVertex("F");
+/* g.addVertice("A");
+g.addVertice("B");
+g.addVertice("C");
+g.addVertice("D");
+g.addVertice("E");
+g.addVertice("F");
 
-g.addEdge("A", "B");
-g.addEdge("B", "A");
-g.addEdge("A", "C");
-g.addEdge("C", "A");
-g.addEdge("A", "D");
-g.addEdge("D", "A");
-g.addEdge("D", "E");
-g.addEdge("E", "D");
-g.addEdge("E", "F");
-g.addEdge("F", "E"); */
+g.addArista("A", "B");
+g.addArista("B", "A");
+g.addArista("A", "C");
+g.addArista("C", "A");
+g.addArista("A", "D");
+g.addArista("D", "A");
+g.addArista("D", "E");
+g.addArista("E", "D");
+g.addArista("E", "F");
+g.addArista("F", "E"); */
+
+//EJEMPLO 3
+/* g.addVertice(1);
+g.addVertice(2);
+g.addVertice(3);
+g.addVertice(4);
+g.addVertice(5);
+g.addVertice(6);
+g.addVertice(7);
+g.addVertice(8);
+g.addVertice(9);
+g.addVertice(10);
+g.addVertice(11);
+g.addVertice(12);
+
+g.addArista(1, 2);
+g.addArista(1, 7);
+g.addArista(1, 8);
+g.addArista(2, 3);
+g.addArista(2, 6);
+g.addArista(8, 9);
+g.addArista(8, 12);
+g.addArista(3, 4);
+g.addArista(3, 5);
+g.addArista(9, 10);
+g.addArista(9, 11); */
 
 
 //EJEMPLO 4
-g.addVertice(1);
+/* g.addVertice(1);
 g.addVertice(2);
 g.addVertice(3);
 g.addVertice(5);
@@ -127,36 +153,23 @@ g.addArista(4, 2);
 g.addArista(2, 5);
 g.addArista(5, 2);
 g.addArista(4, 5);
-g.addArista(5, 4);
+g.addArista(5, 4); */
+
+//EJEMPLO 5
+g.addVertice(0);
+g.addVertice(1);
+g.addVertice(2);
+g.addVertice(3);
+g.addVertice(4);
+
+g.addArista(0, 1);
+g.addArista(0, 3);
+g.addArista(0, 2);
+g.addArista(2, 1);
+g.addArista(2, 4);
+
 
 g.imprimirGrafo();
 
 console.log('Busqueda en profundidad');
-g.dfs(1);
-
-
-//EJEMPLO 3
-/* g.addVertex(1);
-g.addVertex(2);
-g.addVertex(3);
-g.addVertex(4);
-g.addVertex(5);
-g.addVertex(6);
-g.addVertex(7);
-g.addVertex(8);
-g.addVertex(9);
-g.addVertex(10);
-g.addVertex(11);
-g.addVertex(12);
-
-g.addEdge(1, 2);
-g.addEdge(1, 7);
-g.addEdge(1, 8);
-g.addEdge(2, 3);
-g.addEdge(2, 6);
-g.addEdge(8, 9);
-g.addEdge(8, 12);
-g.addEdge(3, 4);
-g.addEdge(3, 5);
-g.addEdge(9, 10);
-g.addEdge(9, 11); */
+g.dfs(0);
