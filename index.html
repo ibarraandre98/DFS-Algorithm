@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DFS</title>
+</head>
 
 <body>
-
+    <div class="content">
+        <a href="javascript:location.reload()">
+            <h1>DFS</h1>
+        </a>
+        <div class="card">
+            <p>Ingrese los vertices</p>
+            <input id="inputVertice" type="text">
+            <button id="vertice">Agregar vertice</button>
+            <div>
+                <h3>Vertices:</h3>
+                <ul id="listaVertices"></ul>
+            </div>
+        </div>
+        <p>Ingrese sus aristas</p>
+        <input id="inputAristas" type="text">
+        <button id="aristas">Agregar arista</button>
+        <div>
+            <h3>Aristas:</h3>
+            <ul id="listaAristas"></ul>
+        </div>
+        <p>Ingrese el nodo por el cual quiere iniciar</p>
+        <input id="inputInicio" type="text">
+        <button id="ejecutar">Ejecutar codigo </button>
+        <div>
+            <h3>Resultado:</h3>
+            <ul id="conexiones"></ul>
+        </div>
+        <div>
+            <h3>Busqueda en profundidad:</h3>
+            <ul id="recorrido"></ul>
+        </div>
+    </div>
     <script src="DFS.js"></script>
 </body>
 
